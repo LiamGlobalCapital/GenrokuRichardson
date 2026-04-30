@@ -1,0 +1,24 @@
+<!--
+  Shared header, loaded into every page by includes.js.
+  Active nav state is handled by includes.js based on the body's data-page attribute.
+
+  To add a new nav link: add a new <a> tag inside .nav-links below.
+  Then on each page that should highlight it, set data-page="newpage" on the body
+  and add a matching case to includes.js.
+-->
+<header class="site-header">
+  <nav class="nav" id="nav">
+    <div class="nav-left">
+      <a href="index.html" class="brand">Genroku Grill<span class="brand-dot">.</span></a>
+      <div class="nav-links">
+        <a href="our-story.html" data-nav="our-story">Our story</a>
+        <a href="catering.html" data-nav="catering">Catering</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <button class="nav-mobile-toggle" onclick="document.getElementById('nav').classList.toggle('menu-open')">Menu</button>
+      <a href="https://www.genrokusushigrill.com/online-ordering" class="btn btn-primary btn-sm">Order online →</a>
+    </div>
+  </nav>
+</header>
